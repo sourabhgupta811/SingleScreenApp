@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:background="@drawable/frame_background"
+        android:translationZ="1dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="10dp"
+            android:padding="70dp"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/iitcsl_pvt_ltd"
+
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/company_motto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="@string/beyond_imagination"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <View
+            android:layout_gravity="left|bottom"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="110dp"
+            android:layout_height="3dp"
+            android:background="#1492E6"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="-5dp"
+        android:orientation="vertical"
+        android:background="@drawable/bottom_background">
+        <TextView
+            style="@style/ListText"
+            android:tag="1"
+            android:id="@+id/website"
+            android:text="@string/weblink"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            style="@style/ListText"
+            android:tag="2"
+            android:id="@+id/phone"
+            android:text="@string/phone_number"
+            />
+            <TextView
+                style="@style/ListText"
+                android:tag="3"
+                android:id="@+id/location"
+                android:text="@string/address"
+                android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+</LinearLayout>
